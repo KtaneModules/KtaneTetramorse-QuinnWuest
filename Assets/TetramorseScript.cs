@@ -246,7 +246,7 @@ public class TetramorseScript : MonoBehaviour
         yield return "solve";
         for (int i = 0; i < list.Count; i++)
         {
-            CircleButtons[list[i]].OnInteract();
+            CircleButtons[list[i] - 1].OnInteract();
             yield return new WaitForSeconds(0.1f);
         }
     }
